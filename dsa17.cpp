@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int fact(int n){
+int fact(int n){   //pass by value ---> copy of n
     int y=1;
     for (int i=2;i<=n;i++){
         y=y*i;
