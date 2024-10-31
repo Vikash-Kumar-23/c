@@ -5,6 +5,7 @@ int main(){
     //num & 1 =0 , if num is even
 
     //can also used to rev number
+    // imp ans = ans * 10 + digit;
     //ans=(((10^i)*digit)+ans)
     //where ans =rev binary number
     //digit last bit of binary number
