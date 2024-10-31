@@ -1,21 +1,31 @@
 #include <iostream>
 using namespace std;
-int main(){
-    float n;
-    int q=0;
-    cout<<"enter the value of n :-";
-    cin>>n;
-    while (1){
-        n=n/2;
-        if (n==2.0){
-            q=1;
-            break;
-        }
-        else if ((n!=2) &&  )
-        {
-            /* code */
-        }
-        
+
+int fact(int n){
+    int y=1;
+    for (int i=2;i<=n;i++){
+        y=y*i;
     }
+    return y;
+}
+
+int ncr(int n,int r){
+    int a=0,b=0,c=0;
+    a=fact(n);
+    b=fact(r);
+    c = fact(n - r);
+    return a / (b * c);
+}
+
+int main(){
+    int num1;
+    int num2;
+    cout<<"enter num1 :-";
+    cin>>num1;
+    cout<<"enter num2 :-";
+    cin>>num2;
+    cout<<fact(num1)<<endl;
+    cout<<fact(num2)<<endl;
+    cout<<ncr(num1,num2)<<endl;
     return 0;
 }
