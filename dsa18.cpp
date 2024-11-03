@@ -25,7 +25,7 @@ void rev(int arr[],int size){
         arr[i]=b1;
         arr[size-i-1]=c1;
         a1--;
-        if (a1==i){
+        if ((a1==i) || (a1)<i){
             break;
         }
     }
@@ -59,12 +59,13 @@ void output(int arr[],int size){
 
 int main(){
     int n[100];
-    int size,q;
+    int size;
     cout<<"enter size of the array :-";
     cin>>size;
     input(n,size);
 
     /*
+    int q;
     cout<<"enter key you want to search :-";
     cin>>q;
     if (search(n,size,q)){
